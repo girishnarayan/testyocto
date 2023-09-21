@@ -1,0 +1,42 @@
+[package]
+name = "finalkerneklraspberrypi"
+version = "0.1.0"
+edition = "2021"
+categories = ["no-std", "embedded"]
+keywords = ["RusPiRo", "baremetal", "raspberrypi", "cache"]
+
+
+# See more keys and their definitions at https://doc.rust-lang.org/cargo/reference/manifest.html
+
+
+[[bin]]
+name = "main"
+path = "./src/main.rs"
+
+
+
+[dependencies]
+
+
+
+
+
+
+
+
+[profile.dev]
+panic ="abort"
+
+[profile.release]
+panic ="abort"
+
+[build-dependencies]
+cross = "0.2.5"
+cc = "1.0" 
+
+
+
+
+
+
+
