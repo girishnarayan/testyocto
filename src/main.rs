@@ -27,15 +27,15 @@ fn panic(_info: &PanicInfo) -> ! {
 #[no_mangle] // don't mangle the name of this function
 pub extern "C" fn _start() -> ! {
     unsafe{
-        core::ptr::write_volatile(0x3F20_0008 as *mut u64,1<<3);
+        core::ptr::write_volatile(0x3F20_0008 as *mut u32,1<<3);
         
         
-        core::ptr::write_volatile(0x3F20_001C as *mut u64,1<<21);
+        core::ptr::write_volatile(0x3F20_001C as *mut u32,1<<21);
 
         for _ in 1..50000{
             asm!("nop");
         }
-        core::ptr::write_volatile(0x3F20_0028 as *mut u64,1<<21);
+        core::ptr::write_volatile(0x3F20_0028 as *mut u32,1<<21);
         for _ in 1..50000{
             asm!("nop");
         }
