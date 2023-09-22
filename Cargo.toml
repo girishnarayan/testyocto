@@ -7,8 +7,8 @@ keywords = ["RusPiRo", "baremetal", "raspberrypi", "cache"]
 
 license = "Apache-2.0"
 description ="kernel development"
-repository ="https://github.com/girishnarayan/testyocto.git"
-homepage ="https://github.com/girishnarayan/testyocto.git"
+repository ="https://github.com/girishnarayan/testyocto/tree/alpha.git"
+homepage ="https://github.com/girishnarayan/testyocto/tree/alpha.git"
 
 
 # See more keys and their definitions at https://doc.rust-lang.org/cargo/reference/manifest.html
